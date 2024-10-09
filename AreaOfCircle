@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class AreaOfCircle {
+    public static void main(String args[])
+    {
+        Scanner calc = new Scanner (System.in);
+        double radius = 0.0;
+        final double PI = 3.14;
+        double area = 0.0;
+        double roundedArea = 0.0;
+    
+        System.out.printf("Enter the radius of the circle to calculate:");
+        radius = calc.nextDouble();
+        area = radius * radius * 3.14;
+        roundedArea = ((int)(area * 100 + 0.5))/100.0;
+        System.out.printf("Area of the circle is: %.2f",roundedArea);
+    }
+}
